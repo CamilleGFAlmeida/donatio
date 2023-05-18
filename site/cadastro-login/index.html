@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro e Login</title>
+    <link rel="stylesheet" href="./css/loginstyle.css" />
+  </head>
+  <body>
+    <main>
+      <div class="box">
+        <div class="inner-box">
+          <div class="forms-wrap">
+            <form action="index.html" autocomplete="off" class="sign-in-form">
+              <div class="logo">
+                <img src="./img/logodonatio.png" alt="logodonatio" />
+                <h4>Donatio.</h4>
+              </div>
+
+              <div class="heading">
+                <h2>Bem-vindo(a)!</h2>
+                <h6>Ainda não tem conta?</h6>
+                <a href="#" class="toggle">Cadastre-se</a>
+              </div>
+
+              <div class="actual-form">
+                <div class="input-wrap">
+                  <input
+                    type="email"
+                    maxlength="20"
+                    class="input-field"
+                    autocomplete="off"
+                    required
+                  />
+                  <label>Email</label>
+                </div>
+
+                <div class="input-wrap">
+                  <input
+                    type="password"
+                    minlength="4"
+                    class="input-field"
+                    autocomplete="off"
+                    required
+                  />
+                  <label>Senha</label>
+                </div>
+
+                <input type="submit" value="Login" class="sign-btn" />
+
+                <p class="text">
+                  Esqueceu sua senha ou login?
+                  <a href="#">Clique aqui</a> para recuperá-la
+                </p>
+              </div>
+            </form>
+
+            <form action="index.html" autocomplete="off" class="sign-up-form">
+              <div class="logo">
+                <img src="./img/logodonatio.png" alt="logodonatio" />
+                <h4>Donatio.</h4>
+              </div>
+
+              <div class="heading">
+                <h2>Cadastrar Conta</h2>
+                <h6>Já tem uma conta?</h6>
+                <a href="#" class="toggle">Faça Login</a>
+              </div>
+
+              <div class="actual-form">
+                <div class="input-wrap">
+                  <input
+                    type="text"
+                    minlength="5"
+                    class="input-field"
+                    autocomplete="off"
+                    required
+                  />
+                  <label>Nome</label>
+                </div>
+
+                <div class="input-wrap">
+                  <input
+                    type="email"
+                    class="input-field"
+                    autocomplete="off"
+                    required
+                  />
+                  <label>Email</label>
+                </div>
+
+                <div class="input-wrap">
+                  <input
+                    type="password"
+                    minlength="4"
+                    class="input-field"
+                    autocomplete="off"
+                    required
+                  />
+                  <label>Senha</label>
+                </div>
+
+                <input type="submit" value="Cadastrar" class="sign-btn" />
+
+                <p class="text">
+                  Ao fazer o cadastro, eu concordo com os 
+                  <a href="#">Termos de Serviço</a> e a
+                  <a href="#">Política de Privacidade</a>
+                </p>
+              </div>
+            </form>
+          </div>
+
+          <div class="carousel">
+            <div class="images-wrapper">
+              <img src="./img/image1.png" class="image img-1 show" alt="" />
+              <img src="./img/image2.png" class="image img-2" alt="" />
+              <img src="./img/image3.png" class="image img-3" alt="" />
+            </div>
+
+            <div class="text-slider">
+              <div class="text-wrap">
+                <div class="text-group">
+                  <h2>Cadastre-se e faça suas doações</h2>
+                  <h2>Veja o status e configurações da sua conta</h2>
+                  <h2>Ajude outras pessoas!</h2>
+                </div>
+              </div>
+
+              <div class="bullets">
+                <span class="active" data-value="1"></span>
+                <span data-value="2"></span>
+                <span data-value="3"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Javascript -->
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>
