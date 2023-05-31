@@ -10,24 +10,65 @@
 <meta charset="UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Cadastro</title>
 <link rel="shortcut icon" href="assets/favicon/favicon.ico" type="image/x-icon">
-<title>Login</title>
-<link rel="stylesheet" href="css/stylelogin.css" />
+<link rel="stylesheet" href="stylecadastro.css" />
 </head>
 <body>
     <div id="page" class="flex">
       <div>
         <header>
-          <a href="../"><img src="./assets/logodonatio.svg" alt="" /></a>
+          <img src="./assets/logodonatio.svg" alt="" />
         </header>
         <main>
           <div class="headline">
-            <h1>Bem-vindo(a)!</h1>
+            <h1>Acesse a plataforma</h1>
             <p>
-              Faça login ou registre-se para começar a fazer as suas doações.
+              Cadastre-se para criar o seu perfil e começar suas doações.
             </p>
           </div>
           <form>
+
+            <div class="input-wrapper">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" required placeholder="Digite seu Nome"/>
+            </div>
+
+            <div class="input-wrapper">
+                <label for="cpf">CPF</label>
+                <input type="text" id="cpf" name="cpf" required placeholder="Digite seu CPF"/>
+            </div>
+
+            <div class="input-wrapper">
+                <label for="cep">CEP</label>
+                <input type="text" id="cep" name="cep" required placeholder="Digite seu CEP"/>
+            </div>
+
+            <div class="input-wrapper">
+                <label for="tel">Telefone</label>
+                <input type="text" id="tel" name="tel" required placeholder="Digite seu Telefone"/>
+            </div>
+
+            <div class="input-wrapper">
+                <label for="ddd">DDD</label>
+                <input type="text" id="ddd" name="ddd" required placeholder="Digite o DDD"/>
+            </div>
+
+            <div class="input-wrapper">
+                <label for="nasc">Data de Nascimento</label>
+                <input type="date" id="nasc" name="nasc" required />
+            </div>
+
+            <div class="input-wrapper">
+                <label for="numresidencial">Número Residencial</label>
+                <input type="text" id="numresidencial" name="numresidencial" required placeholder="Digite o número residencial"/>
+            </div>
+
+            <div class="input-wrapper">
+                <label for="complemento">Complemento</label>
+                <input type="complemento" id="complemento" name="complemento" required placeholder="Digite seu Complemento"/>
+            </div>
+
             <div class="input-wrapper">
               <label for="email">E-mail</label>
               <input
@@ -42,7 +83,6 @@
             <div class="input-wrapper">
               <div class="label-wrapper flex">
                 <label for="senha"> Senha </label>
-                <a href="recuperar.html"> Esqueceu a senha? </a>
               </div>
 
               <input
@@ -65,16 +105,11 @@
               />
             </div>
 
-            <button type="submit">Entrar</button>
-
-            <div class="create-account">
-              Ainda não tem uma conta?
-              <a href="cadastro.html"> Cadastre-se </a>
-            </div>
+            <button type="submit">Cadastrar</button>
           </form>
         </main>
       </div>
-      <img src="./assets/imageback2.png" alt="" />
+      <img src="./assets/imageback.jpg" alt="" />
     </div>
 
     <!-- JS -->
