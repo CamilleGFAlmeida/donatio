@@ -165,7 +165,7 @@ button:hover {
     position: relative;
     min-height: 100vh;
     z-index: 0;
-    background: rgba(99, 194, 110, 0.1);
+    background: #fcf0c542; /* rgba(99, 194, 110, 0.1) */ 
     padding: 40px 40px;
 }
 
@@ -223,7 +223,7 @@ button:hover {
     position: absolute;
     right: -5px;
     top: -3px;
-    background: #475569;
+    background: #FFA7A6; /* #475569 */ 
     border-radius: 50px;
     color: #fff;
     text-align: center;
