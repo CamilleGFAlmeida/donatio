@@ -143,7 +143,7 @@
 
                 if($comando->execute())
                 {
-                    $retorno = "Cadastrado com sucesso";
+                    header("Location:login.php");
                 }
             }
             catch (PDOException $erro)
@@ -183,11 +183,84 @@
 
         //------------------------------------
 
-        public function login()
+        public function logar()
+        {
+            include_once "../BD/conexao.php";
+
+            
+            try {
+                $comando=$conexao->prepare("select email,senha from doador where email = ? and senha = ?");
+                $comando->bindParam(2,$this->senhal);
+                $comando->bindParam(1,$this->email);
+
+               $comando->execute();
+               $retorno = $comando->fetchAll(PDO::FETCH_ASSOC);
+               foreach($retorno as $dd)
+               {
+                    if($dd['email'] != $this->email)
+                    {
+
+                    }
+                    else
+                    {
+                        header("Location:");
+                    }
+               }
+               $retorno = "";
+            }
+            catch (PDOException $erro)
+            {
+                $retorno = "erro: " . $erro->getMessage();
+            }
+            return $retorno;
+        }
+    }
+
+    class Recuperacao
+    {
+        private $emailR;
+
+        //-------------------------------------
+
+        public function getEmailR()
+        {
+            return $this->emailR;
+        }
+        public function setEmailR($cemailr)
+        {
+            $this->emailR = $cemailr;
+        }
+
+        //------------------------------------
+
+        public function rec()
         {
             include_once "../BD/conexao.php";
 
 
+            try {
+                $comando=$conexao->prepare("select email from doador where email = ?");
+                $comando->bindParam(1,$this->emailR);
+
+               $comando->execute();
+               $retorno = $comando->fetchAll(PDO::FETCH_ASSOC);
+               foreach($retorno as $dd)
+               {
+                    if($dd['email'] != $this->emailR)
+                    {
+
+                    }
+                    else
+                    {
+                        $retorno = "email mandado";
+                    }
+               }
+            }
+            catch (PDOException $erro)
+            {
+                $retorno = "erro: " . $erro->getMessage();
+            }
+            return $retorno;
         }
     }
 ?>
