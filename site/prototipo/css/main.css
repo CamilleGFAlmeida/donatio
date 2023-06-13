@@ -55,11 +55,13 @@ html{
  * #SCROLLBAR CUSTOM 
 \*-----------------------------------*/
 ::-webkit-scrollbar {
-    width: 12px;
+    width: 14px;
+    border-radius: 15px;
 }
 
-::-webkit-scrollbar-track {
-    background:linear-gradient(#e94a8c, #f811ab);
+::-webkit-scrollbar-thumb {
+    background:linear-gradient(#e94a8c, #FFA7A6);
+    border-radius: 15px;
 }
 
 /* setup & reusable stylings */
@@ -172,7 +174,7 @@ section{
     width: 27ch;
     white-space: nowrap;
     overflow: hidden;
-    animation: typing 8s steps(27), blinking 0.6s;
+    animation: typing 12s steps(27), blinking 0.6s;
 }
 
 @keyframes typing {
@@ -205,6 +207,7 @@ section{
     flex-direction: column;
     justify-content: stretch;
 }
+
 .navbar{
     position: fixed;
     top: 0;
@@ -321,8 +324,8 @@ section{
   z-index: 1;
   background: url("../assets/about-bg.png") no-repeat;
   background-position: center;
-  background-size: cover;
-  padding: 120px 0;
+  /*background-size: cover; */ 
+  padding: 6rem 0; /* 120px */ 
   text-align: center;
 }
 
@@ -489,6 +492,77 @@ section{
 .btn:hover {
     color: var(--night-rider);
     transition: var(--transition);
+}
+
+/*-----------------------------------*\ 
+ * #APP SECTION
+\*-----------------------------------*/
+#boxes-text-modify-title-app { /* titulo da pagina */ 
+     font-weight: 600;
+     font-size: 50px;
+     color: var(--white-smoke);
+     text-align: center;
+     margin-bottom: 6rem;
+}
+
+#boxes-text-subtitle-app { /* subtitulo de texto */ 
+    font-size: large; /* ADD */ 
+    font-weight: 500;
+    text-align: center;
+    margin: 3rem;
+    color: var(--white-smoke);
+    
+}
+
+.about-app { /* App Container */ 
+  position: relative;
+  z-index: 1;
+  background: url("../assets/about-bg.png") no-repeat;
+  /*background-position: center;  testar devtools */ 
+  /*background-size: cover; testar devtools */ 
+  padding: 100px 0;
+  text-align: center;
+}
+
+.container { 
+    padding: 10px 15px; 
+}
+
+.about-card .card-title {
+    padding-inline: 40px; 
+}
+
+.about-bottom-banner {
+    max-width: 400px;
+    margin-inline: auto;
+    margin-bottom: 40px;
+}
+
+.about-bottom-content { padding-inline: 50px; }
+
+.about-top .section-title { margin-bottom: 20px; }
+
+.about-top .section-title { margin-bottom: 20px; }
+
+.about-top .section-text {
+  color: var(--white);
+  font-size: var(--fs-4);
+  margin-bottom: 60px;
+}
+
+.about-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+.about-bottom-banner img {
+  width: 100%;
+  height: 100%;
+}
+
+.about-bottom .section-title {
+     margin-bottom: 40px; 
 }
 
 
@@ -728,10 +802,10 @@ section{
 /* footer */
 .footer{
     text-align: center;
-    background: var(--black);
+    background: var(--night-rider);
     color: var(--white-smoke);
     padding: 2rem 0;
-    height: 60vh; /* 50vh */ 
+    height: 40vh; /* 50vh */ 
 }
 .footer .text{
     opacity: 0.8;
