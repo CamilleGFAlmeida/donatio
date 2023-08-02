@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Donatio.</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <!-- normalize css -->
+    <link rel = "stylesheet" href = "resources/normalize.css">
+    <!-- font -->
+    <link rel = "stylesheet" href = "resources/font.css">
+    <!-- font awesome cdn -->
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" /> --> 
+
+   <script src="https://kit.fontawesome.com/1776ae4867.js" crossorigin="anonymous"></script>
+    <!-- magnific popup -->
+    <link rel = "stylesheet" href = "resources/Magnific-Popup-master/dist/magnific-popup.css">
+    <!-- owl carousel -->
+    <link rel = "stylesheet" href = "resources/OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
+    <link rel = "stylesheet" href = "resources/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css">
+    <!-- animate css -->
+    <link rel = "stylesheet" href = "resources/animate.css-main/animate.css">
+    <!-- custom (main) css -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Fonte -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+
+    <!-- AOS -ANIMATE ON SCROLL -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  </head>
+  <body>
+     <div id="cookiePopup" class="hide">
+      <img src="./Cookie-Consent-Banner/Cookie Consent Banner/cookie.png" />
+      <p>
+        Este site usa cookies e tecnologias afins. Ao utilizar nosso site você está de acordo com a 
+        utilização dos cookies para te proporcionar uma melhor experiência.  
+        <a href="#">Cookie Policy & Privacy.</a>
+      </p>
+      <button id="acceptCookie">Aceito</button>
+    </div>
+    <!-- Script -->
+    <script src="./Cookie-Consent-Banner/Cookie Consent Banner/script.js"></script>
+
+
+    <!-- header -->
+    <header class = "header" id = "inicio">
+      <nav class = "navbar">
+        <div class = "container">
+          <div class = "brand-and-toggler">
+           <a href = "index.html" class = "navbar-brand">Donatio<span>.</span></a> 
+            <button type = "button" class = "navbar-toggler" id = "navbar-toggler">
+              <i class = "fas fa-bars"></i>
+            </button>
+          </div>
+
+          <div class = "navbar-collapse">
+            <ul class = "navbar-nav">
+              <li class = "nav-item">
+                <a href = "#inicio" class = "nav-link">Início</a>
+              </li>
+                <li class = "nav-item">
+                <a href = "#organizate" class = "nav-link">Organização</a>
+              </li>
+              <li class = "nav-item">
+                <a href = "#feature" class = "nav-link">Sobre nós</a>
+              </li>
+                <li class = "nav-item">
+                <a href = "#video" class = "nav-link">Projeto</a>
+              </li>
+               <li class = "nav-item">
+                <a href = "#institution" class = "nav-link">Instituição</a>
+              </li>
+               <li class = "nav-item">
+                <a href = "#app" class = "nav-link">APP</a>
+              </li>
+              <li class = "nav-item">
+                <a href = "#faq" class = "nav-link">FAQ</a>
+              </li>
+              <li class = "nav-item">
+                <a href = "#contact" class = "nav-link">Contato</a>
+              </li>
+               <a href="../cadastro-login/login.html"><button type = "submit" class = "submit-btn-login d-none">Entrar Agora!</button></a>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class = "hero-div center container">
+        <h1 id="title-text-white">A plataforma de caridade <span id="title-text">que veio para mudar o mundo</span></h1>
+        <p class = "animate__animated animate__fadeInUp animate__slow">Bem-vindo à nossa plataforma.</p>
+        <div class="line-text-subtitle"></div>
+
+        <div class = "hero-btns animate__animated animate__fadeInUp animate__slow">
+          <a href="./saiba-mais.html"><button type = "button" class = "btn-trans">Saiba mais</button></a>
+          <a href="../cadastro-login/login.html"><button type = "button" class = "btn-white">Cadastre-se agora!</button></a>
+        </div>
+      </div>
+    </header>
+    <!-- end of header -->
+
+    <!-- detail section -->
+    <section class = "detail about" id="organizate">
+      <div class = "container">
+          <h1 id="boxes-text-modify-title">Por que Escolher a <span class="color-point">Donatio.</span>?</h1>
+          <div class="line-text-subtitle-dnt"></div>
+          <h2 id="boxes-text-subtitle">Prezamos em primeiro lugar pela praticidade em oferecer o melhor serviço àqueles que mais precisam!</h2>
+           
+        <div class = "row">
+          <div class = "detail-item wow animate__animated animate__fadeInLeft animate__slow">
+            <span><i class="fa-solid fa-people-roof"></i></span>
+            <h2 id="boxes-text">Compromisso</h2>
+            <div class = "line"></div>
+            <p class = "text-dnt">A Donatio tem um compromisso para te ajudar a realizar e coletar doações da forma mais rápida e prática possível.   Nosso sistema de monitoramento funciona por 24 horas.</p>
+          </div>
+
+          <div class = "detail-item wow animate__animated animate__fadeInUp animate__s">
+            <span><i class="fa-sharp fa-solid fa-hand-holding-heart"></i></span>
+            <h2 id="boxes-text">Garantia de Segurança</h2>
+            <div class = "line"></div>
+            <p class = "text-dnt">Prezamos pela segurança de seus dados e para isso contamos com uma criptografia para cada usuário. Seus dados estarão protegidos durante e depois da doação, sendo usuário institucional ou usuário jurídico/físico.</p>
+          </div>
+
+          <div class = "detail-item wow animate__animated animate__fadeInRight animate__slow">
+            <span><i class="fa-sharp fa-solid fa-bell"></i></span>
+            <h2 id="boxes-text">Suporte</h2>
+            <div class = "line"></div>
+            <p class = "text-dnt">Contamos com suporte 24 horas para que você possa tirar dúvidas, relatar erros e até mesmo para facilitar na solicitação da sua doação.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of detial section -->
+    
+ <!-- features section -->
+    <section class = "feature" id = "feature">
+      <div class = "container">
+        <div class = "row">
+          <div class = "feature-left wow animate__animated animate__fadeInUp animate__slow">
+            <img src = "assets/organizar-p.svg" alt = "">
+          </div>
+          <div class = "feature-right wow animate__animated animate__fadeInUp animate__slow">
+            <div class = "title titleanimation">
+              <h2>Como organizamos <span id="title-text-about-us">as doações?</span></h2>
+              <p class = "text">Pequenos passos para que você consiga entender como são feitas as doações na Donatio e porquê somos a sua melhor escolha.</p>
+            </div>
+
+            <div class = "feature-item">
+              <span><i class = "fas fa-tablet-alt"></i></span>
+              <div>
+                <h3 class="text-boxes">Download e Conta</h3>
+                <p class = "text">Faça o download do nosso aplicativo ou acesse o site desktop para fazer o seu cadastro e crie seu perfil.</p>
+              </div>
+            </div>
+
+            <div class = "feature-item">
+              <span><i class="fa-solid fa-user"></i></span>
+              <div>
+                <h3>Itens e Verificação</h3>
+                <p class = "text">Após o cadastro, escolha o que deseja doar ou receber, os itens serão avaliados por um processo de verificação e cadastrados no nosso sistema.</p>
+              </div>
+            </div>
+
+            <div class = "feature-item">
+              <span><i class="fa-solid fa-clock"></i></span>
+              <div>
+                <h3>Coleta e Agendamento</h3>
+                <p class = "text">Assim que o processo de verificação for concluído, enviaremos um e-mail de confirmação para a coleta na data e horários agendados.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+    <!-- end of features section -->
+
+    <!-- sample video section -->
+    <section class = "video" id="video">
+      <div class = "container">
+        <a class = "center popup-youtube" href = "https://youtube.com/watch?v=cdwCzl12hkQ"> <!-- https://www.youtube.com/watch?v=zYhdKPwgjGo -->
+          <i id="btn-video" class = "fas fa-play"></i>
+        </a>
+        <h2 class = "wow animate__animated animate__fadeInUp animate__slow" id="boxes-text-modify-title-video">Conheça o nosso <span class="color-point">projeto</span></h2>
+        <p class = "wow animate__animated animate__fadeInUp animate__slow">Saiba mais sobre o nosso objetivo e como a sua ajuda é importante para nós!</p>
+      </div>
+    </section>
+    <!-- end of sample video section -->
+
+     <!-- 
+        - #CTA
+      -->
+
+      <section class="cta" id="institution">
+        <div class="container">
+
+          <div class="cta-card">
+
+            <h3 class="cta-title" id="boxes-text-modify-title-cta">Você é uma <span class="color-point-cta">instituição?</span></h3>
+            <div class="line-text-subtitle-cta"></div>
+
+            <!-- <h3 class="cta-title">Você é uma <span class="color-point">instituição?</span></h3>-->
+
+            <p class="cta-text">
+              Curtiu o nosso projeto e quer nos ajudar de alguma forma? Faça parte do nosso grupo de apoiadores, empresas parceiras ou cadastre a sua instituição para fazer a diferença e transformar o mundo!
+            </p>
+
+            <form action="../cadastro-login-instituição/login.html" class="cta-form"> 
+
+              <a href="#"><button type="submit" class="btn">Ir para o formulário</button></a>
+
+            </form>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- App Section -->
+
+        <section class="about-app" id="app">
+        <div class="container">
+
+            <div class="about-bottom">
+
+            
+              <h2 id="boxes-text-modify-title-app">Baixe o nosso <span class="color-point">App!</span></h2>
+              <div class="line-text-subtitle"></div>
+
+            <div class="about-bottom-content">
+
+             <!-- <h2 id="boxes-text-modify-title-app">Baixe o nosso <span class="color-point">App!</span></h2>-->
+
+              <figure class="about-bottom-banner">
+              <img src="./assets/app2.svg" alt="about banner" class="about-banner">
+            </figure>
+             <div class="line-text-subtitle"></div>
+
+              <p id="boxes-text-subtitle-app">
+               Clique aqui para baixar o nosso app e começar a fazer suas doações de forma simples e segura. 
+              </p>
+
+              <a href="#linkdoapp" target="_blank"><button class="btn btn-app">Download</button></a>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+    <!-- team section 
+    <section class = "team" id = "team">
+      <div class = "container">
+        <div class = "title">
+          <h2 class = "wow animate__animated animate__bounceIn animate__slow">Meet Best People</h2>
+          <p class = "text">Lorem ipsum dolor sit amet consectetur</p>
+        </div>
+
+        <div class = "row owl-carousel owl-theme wow animate__animated animate__fadeInUp animate__slow">
+          <div class = "team-item">
+            <div class = "team-img">
+              <img src = "assets/team-1.jpg" alt = "">
+              <div class = "team-icons">
+                <a href = "#" class = "center">
+                  <i class = "fab fa-facebook-f"></i>
+                </a>
+                <a href = "#" class = "center">
+                  <i class = "fab fa-twitter"></i>
+                </a>
+                <a href = "#" class = "center">
+                  <i class = "fab fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+            <div class = "team-info">
+              <h3>Full Name Here</h3>
+              <span>Web Developer</span>
+            </div>
+          </div>
+
+          <div class = "team-item">
+            <div class = "team-img">
+              <img src = "assets/team-2.jpg" alt = "">
+              <div class = "team-icons">
+                <a href = "#" class = "center">
+                  <i class = "fab fa-facebook-f"></i>
+                </a>
+                <a href = "#" class = "center">
+                  <i class = "fab fa-twitter"></i>
+                </a>
+                <a href = "#" class = "center">
+                  <i class = "fab fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+            <div class = "team-info">
+              <h3>Full Name Here</h3>
+              <span>Web Developer</span>
+            </div>
+          </div>
+
+          <div class = "team-item">
+            <div class = "team-img">
+              <img src = "assets/team-3.jpg" alt = "">
+              <div class = "team-icons">
+                <a href = "#" class = "center">
+                  <i class = "fab fa-facebook-f"></i>
+                </a>
+                <a href = "#" class = "center">
+                  <i class = "fab fa-twitter"></i>
+                </a>
+                <a href = "#" class = "center">
+                  <i class = "fab fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+            <div class = "team-info">
+              <h3>Full Name Here</h3>
+              <span>Web Developer</span>
+            </div>
+          </div>
+
+          <div class = "team-item">
+            <div class = "team-img">
+              <img src = "assets/team-4.jpg" alt = "">
+              <div class = "team-icons">
+                <a href = "#" class = "center">
+                  <i class = "fab fa-facebook-f"></i>
+                </a>
+                <a href = "#" class = "center">
+                  <i class = "fab fa-twitter"></i>
+                </a>
+                <a href = "#" class = "center">
+                  <i class = "fab fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+            <div class = "team-info">
+              <h3>Full Name Here</h3>
+              <span>Web Developer</span>
+            </div>
+          </div>
+
+          <div class = "team-item">
+            <div class = "team-img">
+              <img src = "assets/team-5.jpg" alt = "">
+              <div class = "team-icons">
+                <a href = "#" class = "center">
+                  <i class = "fab fa-facebook-f"></i>
+                </a>
+                <a href = "#" class = "center">
+                  <i class = "fab fa-twitter"></i>
+                </a>
+                <a href = "#" class = "center">
+                  <i class = "fab fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+            <div class = "team-info">
+              <h3>Full Name Here</h3>
+              <span>Web Developer</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    end of team section -->
+
+     <!-- QUOTE  -->
+    <section class = "sec-8 py-3">
+        <h1 class = "lg-title">"A <span class="color-point">doação</span> prova que o amor vai <span class="color-point">além das palavras</span> e se transforma em ação</>"</h1>
+        <div class = "container">
+            <div class = "sec-item">
+                <span class = "flex-center">
+                    <i class = "fa fa-mobile"></i>
+                </span>
+                <h3>Prático</h3>
+            </div>
+            <div class = "sec-item">
+                <span class = "flex-center">
+                    <i class = "fa fa-heart"></i>
+                </span>
+                <h3>Solidário</h3>
+            </div>
+            <div class = "sec-item">
+                <span class = "flex-center">
+                    <i class = "fa fa-globe"></i>
+                </span>
+                <h3>Transformador</h3>
+            </div>
+            <div class = "sec-item">
+                <span class = "flex-center">
+                    <i class = "fa fa-user-check"></i>
+                </span>
+                <h3>Seguro</h3>
+            </div>
+        </div>
+    </section>
+    <!-- end of QUOTE -->
+
+    <!-- PARTNERS -->
+     <!-- section 4 -->
+    <section class = "sec-4 py-3">
+        <h1 id = "boxes-text-modify-title-partners">Se torne nosso parceiro e <span class="color-point-partners">nos ajude a crescer</span></h1>
+        <div class = "container">
+            <p class = "text-faq">Nosso programa de parcerias está repleto de vantagens para as empresas que querem nos ajudar a transformar o mundo de uma forma mais prática e simples para conseguirmos um alcance cada vez maior, para saber mais sobre ele é só entrar em contato conosco pelo nosso formulário e falar diretamente com os idealizadores da Donatio para se tornar um dos nossos apoiadores!</p>
+            <div class = "btn-group">
+                <!--<button type = "button" class = "btn btn-dark">About us</button> --> 
+                <a id="partners_link" href="#contact"><button type = "button" class = "btn btn-transparent">Contato</button></a>
+            </div>
+        </div>
+    </section>
+    <!-- end of section 4 -->
+    <!-- end of PARTNERS -->
+
+
+    
+    <!-- faq section -->
+    <section class = "faq about-faq" id="faq">
+      <div class = "container">
+        <div class = "title">
+          <h2 class = "wow animate__animated animate__bounceIn animate__slow" id="boxes-text-modify-title-cta">Dúvidas <span class="color-point">Frequentes</span></h2>
+          <div class="line-text-subtitle-dnt"></div>
+          <p id="text-faq" class = "text">Sabemos que podem surgir muitas dúvidas durante os processos, por isso aqui estão algumas dúvidas frequentes que podem te ajudar.</p>
+        </div>
+
+        <div class = "row wow animate__animated animate__fadeInUp animate__slow">
+          <div class = "faq-item">
+            <div class = "faq-head">
+              <h3>Dúvida 1?</h3>
+              <span><i class = "fas fa-plus"></i></span>
+            </div>
+            <div class = "faq-content">
+              <p class = "text-faq-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nisi quis molestiae autem exercitationem sed, asperiores provident aut, quaerat illo ex reiciendis sapiente voluptas quisquam?</p>
+              <p class = "text-faq-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, suscipit! Officiis architecto laboriosam harum officia!</p>
+            </div>
+          </div>
+
+          <div class = "faq-item">
+            <div class = "faq-head">
+              <h3>Dúvida 2?</h3>
+              <span><i class = "fas fa-plus"></i></span>
+            </div>
+            <div class = "faq-content">
+              <p class = "text-faq-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nisi quis molestiae autem exercitationem sed, asperiores provident aut, quaerat illo ex reiciendis sapiente voluptas quisquam?</p>
+              <p class = "text-faq-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, suscipit! Officiis architecto laboriosam harum officia!</p>
+            </div>
+          </div>
+
+          <div class = "faq-item">
+            <div class = "faq-head">
+              <h3>Dúvida 3?</h3>
+              <span><i class = "fas fa-plus"></i></span>
+            </div>
+            <div class = "faq-content">
+              <p class = "text-faq-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nisi quis molestiae autem exercitationem sed, asperiores provident aut, quaerat illo ex reiciendis sapiente voluptas quisquam?</p>
+              <p class = "text-faq-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, suscipit! Officiis architecto laboriosam harum officia!</p>
+            </div>
+            <!-- DIV DA IMAGEM DO FAQ -->
+            <!--<div class="faq-head-img"><img src="assets/faq.svg"></div> --> 
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of faq section -->
+
+    <!-- pricing section 
+    <section class = "pricing" id = "pricing">
+      <div class = "container">
+        <div class = "title">
+          <h2 class = "wow animate__animated animate__bounceIn animate__slow">Our Package</h2>
+          <p class = "text">Lorem ipsum dolor sit amet consectetur</p>
+        </div>
+
+        <div class = "row wow animate__animated animate__fadeInUp animate__slow">
+          <div class = "pricing-item">
+            <h2>Business Version</h2>
+            <div class = "price">
+              <span>$ 120</span>
+              <span class = "text">Monthly</span>
+            </div>
+            <ul>
+              <li>24 Accounts</li>
+              <li>10 GB Storage</li>
+              <li>Lifetime Support</li>
+              <li>Reliable Service</li>
+            </ul>
+          </div>
+
+          <div class = "pricing-item">
+            <h2>Professional Version</h2>
+            <div class = "price">
+              <span>$ 120</span>
+              <span class = "text">Monthly</span>
+            </div>
+            <ul>
+              <li>24 Accounts</li>
+              <li>10 GB Storage</li>
+              <li>Lifetime Support</li>
+              <li>Reliable Service</li>
+            </ul>
+          </div>
+
+          <div class = "pricing-item">
+            <h2>Standard Version</h2>
+            <div class = "price">
+              <span>$ 120</span>
+              <span class = "text">Monthly</span>
+            </div>
+            <ul>
+              <li>24 Accounts</li>
+              <li>10 GB Storage</li>
+              <li>Lifetime Support</li>
+              <li>Reliable Service</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    end of pricing section -->
+
+    <!-- testimonial section 
+    <section class = "testimonial" id = "testimonial">
+      <div class = "container">
+        <div class = "title">
+          <h2 class = "wow animate__animated animate__bounceIn animate__slow">Testimonials Words</h2>
+          <p class = "text">Lorem ipsum dolor sit amet consectetur</p>
+        </div>
+
+        <div class = "row owl-carousel owl-theme wow animate__animated animate__fadeInUp animate__slow">
+          <div class = "testimonial-item">
+            <div class = "testimonial-img">
+              <img src = "assets/test-1.jpg" alt = "">
+            </div>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta doloribus necessitatibus totam alias unde sint veritatis placeat beatae maiores odio?</p>
+            <span>Someone's Name</span>
+          </div>
+
+          <div class = "testimonial-item">
+            <div class = "testimonial-img">
+              <img src = "assets/test-2.jpg" alt = "">
+            </div>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta doloribus necessitatibus totam alias unde sint veritatis placeat beatae maiores odio?</p>
+            <span>Someone's Name</span>
+          </div>
+
+          <div class = "testimonial-item">
+            <div class = "testimonial-img">
+              <img src = "assets/test-3.jpg" alt = "">
+            </div>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta doloribus necessitatibus totam alias unde sint veritatis placeat beatae maiores odio?</p>
+            <span>Someone's Name</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    end of testimonial section -->
+
+    <!-- contact section -->
+    <section class = "contact" id = "contact">
+      <div class = "container">
+        <div class = "title">
+          <h2 class = "wow animate__animated animate__bounceIn animate__slow " id="boxes-text-modify-title-contact">Alguma Pergunta? <span class="color-point">A gente tem a resposta.</span></h2>
+          <p class = "text-contact">Manda pra gente a sua dúvida, reclamação, sugestão ou entre em contato conosco para suporte, vamos adorar receber seu feedback!</p>
+        </div>
+
+        <div class = "row wow animate__animated animate__fadeInUp animate__slow">
+          <div class = "contact-left">
+            <h2 id="">Mande sua mensagem aqui</h2>
+            <form>
+              <input type = "text" class = "form-control" placeholder="Nome">
+              <input type = "email" class = "form-control" placeholder="Email">
+              <textarea placeholder="Mensagem" rows = "6"></textarea>
+              <button type = "submit" class = "submit-btn">Enviar Agora</button>
+            </form>
+          </div>
+
+          <div class = "contact-right">
+            <div>
+              <h2>Localização</h2>
+              <p class = "text">ETEC Jorge Street - Bell Aliance, 149 - São Caetano do Sul</p>
+            </div>
+            <div>
+              <h2>Nosso telefone</h2>
+              <p class = "text">4002-8922 / 98320-4567</p>
+            </div>
+            <div>
+              <h2>Mande um Email</h2>
+              <p class = "text">donatiotcc@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of contact section -->
+
+    <!-- footer -->
+    <footer class = "footer center">
+      <a href="index.html"><img src="assets/logodonatio.png" alt=""></a>
+      <div class = "container">
+        <p class = "text">Copyright &copy; Donatio. | Todos os Direitos Reservados.</p>
+        <div class = "footer-links">
+          <a href = "#" class = "center">
+            <i class = "fab fa-facebook-f"></i>
+          </a>
+          <a href = "#" class = "center">
+            <i class = "fab fa-instagram"></i>
+          </a>
+          <a href = "#" class = "center">
+            <i class = "fab fa-twitter"></i>
+          </a>
+          <a href = "#" class = "center">
+            <i class = "fab fa-youtube"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <!-- end of footer -->
+
+    <!-- Float Button Whats -->
+    <div class="whats">
+        <a href=" https://wa.me/5511999999999?text=Olá! Gostaria de agendar minha doação." target="_blank" data-aos="zoom-in-up" data-aos-delay="500">
+        <img src="assets/whatssapp.svg" width="140" alt="Fale Conosco pelo Whatsapp">
+       </a>
+    </div>
+    <!-- 
+    - #GO TO TOP
+  -->
+  <a href="#top" class="go-top active" data-go-top data-aos="zoom-in-up" data-aos-delay="500">
+   <i class="fa-sharp fa-solid fa-caret-up"></i>
+  </a>
+
+  <!-- SCRIPT AOS ANIMATE ON SCROLL - BIBLIOTECA DE ANIMAÇÃO -->
+<script>
+  AOS.init();
+</script>
+
+    <!-- jQuery -->
+    <script src = "resources/jquery-3.5.1.js"></script>
+    <!-- magnific popup -->
+    <script src = "resources/Magnific-Popup-master/dist/jquery.magnific-popup.js"></script>
+    <!-- owl carousel -->
+    <script src = "resources/OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
+    <!-- wow js -->
+    <script src = "resources/WOW-master/dist/wow.js"></script>
+    <!-- custom js -->
+    <script src="js/script.js" ></script>
+  </body>
+</html>

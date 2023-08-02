@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!-- Coding by CodingLab | www.codinglabweb.com  -->
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saiba Mais - Doações</title>
+
+    <!--Favicon -->
+    <link rel="shortcut icon" href="./favicon/favicon.ico" type="image/x-icon">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/saiba-mais/swiper-bundle.min.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/saiba-mais/style.css" />
+  </head>
+  <body>
+    <section class="main swiper mySwiper">
+      <div class="wrapper swiper-wrapper">
+        <div class="slide swiper-slide">
+          <img src="assets/images/slider-1.jpg" alt="" class="image" />
+          <div class="image-data">
+            <span class="text">Sua doação conta muito.</span>
+            <h2>
+              Suas ações podem <br />
+              mudar vidas!
+            </h2>
+            <a href="./index.html" class="button">Voltar para Página Inicial</a>
+          </div>
+        </div>
+        <div class="slide swiper-slide">
+          <img src="assets/images/slider-2.jpg" alt="" class="image" />
+          <div class="image-data">
+            <span class="text">Queremos te ajudar da forma mais rápida e segura.</span>
+            <h2>
+              Entenda mais abaixo <br />
+              sobre as coletas
+            </h2>
+            <a href="./index.html" class="button">Voltar para Página Inicial</a>
+          </div>
+        </div>
+        <div class="slide swiper-slide">
+          <img src="assets/images/slider-3.png" alt="" class="image" />
+          <div class="image-data">
+            <span class="text">A forma mais prática no seu dia a dia.</span>
+            <h2>
+              É só mandar a sua localização <br />
+              que coletamos direto no seu endereço
+            </h2>
+            <a href="./index.html" class="button">Voltar para Página Inicial</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-button-next nav-btn"></div>
+      <div class="swiper-button-prev nav-btn"></div>
+      <div class="swiper-pagination"></div>
+    </section>
+
+    <!-- section 3 -->
+    <section class = "sec-3 py-3">
+        <h1 class = "lg-title">Quais são os itens que coletamos? <br>
+            *lembrando que todos serão verificados*</h1>
+        <div class = "container">
+            <div class = "sec-item">
+                <div class = "item-top">
+                    <a href = "#" class = "md-title">Coleta de Itens</a>
+                    <p class = "text">Aceitamos: <br> <br><strong>Alimentos não perecíveis, roupas, móveis, brinquedos, produtos para animais domésticos, livros e eletro-eletrônicos.</strong></p>
+                </div>
+                <div class = "item-bottom">
+                    <img src = "assets/images/p-1.jpg">
+                </div>
+            </div>
+            <div class = "sec-item">
+                <div class = "item-top">
+                    <a href = "#" class = "md-title">Destino das Doações</a>
+                    <p class = "text">As doações poderão ser recebidas por:<br>
+                      <br><strong>Orfanatos, lar de idosos, igrejas, bazar Donatio, destinada a pets e abrigos para sem-teto.</strong>
+                    </p>
+                </div>
+                <div class = "item-bottom">
+                    <img src = "assets/images/p-2.jpg">
+                </div>
+            </div>
+            <div class = "sec-item">
+                <div class = "item-top">
+                    <a href = "#" class = "md-title">Como as doações são verificadas?</a>
+                    <p class = "text"><strong>Após o cadastro e o agendamento</strong> da coleta serem realizados pela instituição ou pelo usuário, nossa empresa <strong>avaliará se os itens estão em boas condições de uso e caso forem aprovados, entraremos em contato com o local de destino da respectiva doação preenchido no formulário para agendar o dia e horário de despache.</strong></p>
+                </div>
+                <div class = "item-bottom">
+                    <img src = "assets/images/p-3.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of section 3 -->
+    <div class="div-color">
+      <p class="text" id="footer-text">Donatio. | &copy; Todos os Direitos Reservados 2023</p>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="js/saiba-mais/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>

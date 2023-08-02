@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"content="Senha" />
+    <title>Recuperação de Senha</title>
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+   <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+    <!--/Style-CSS -->
+    <link rel="stylesheet" href="css/stylerecuperar-link.css" type="text/css" media="all" />
+
+    <script src="https://kit.fontawesome.com/af562a2a63.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- começo -->
+    <section class="w3l-mockup-form">
+        <div class="container">
+            <!-- /form -->
+            <div class="workinghny-form-grid">
+                <div class="main-mockup">
+                    <div class="alert-close">
+                        <a href="login.html"><span class="fa fa-close"></span></a> <!-- link add --> 
+                    </div> 
+                   <div class="w3l_form align-self">
+                        <div class="left_grid_info">
+                          <!--  <img src="assets/recuperar-link.svg" alt=""> --> 
+                        </div>
+                    </div> 
+                    <div class="content-wthree">
+                        <h2>Digite seus Dados</h2>
+                        <p>Digite seus dados para confirmar a alteração de senha.</p>
+                      
+                        <form action="" method="post">
+                            <div class="label">
+                                <label for="email">Email</label>
+                            </div>
+                            <input type="email" class="email" name="email" placeholder="Digite seu e-mail" required 
+                             autocomplete="off">
+
+                             <div class="label">
+                                <label for="cpf">CPF</label>
+                            </div>
+                            <input type="text" class="cpf" name="cpf" placeholder="Digite seu CPF" required 
+                             autocomplete="off">
+
+                              <div class="label">
+                                <label for="newpassword">Nova Senha</label>
+                            </div>
+                            <input type="password" class="newpassword" name="newpassword" placeholder="Digite a Senha" required 
+                             autocomplete="off">
+
+                              <div class="label">
+                                <label for="confirmpassword">Confirmar Senha</label>
+                            </div>
+                            <input type="password" class="confirmpassword" name="confirmpassword" placeholder="Digite a Senha Novamente" required 
+                             autocomplete="off">
+
+                            <button name="submit" class="btn" type="submit">Redefinir a Senha</button>
+                        </form>
+                        <!--<div class="social-icons">
+                            <p>Voltar para <span id="color-login"><a href="login.html">Login</a></span></p>
+                        </div> --> 
+                    </div>
+                </div>
+            </div>
+            <!-- //form -->
+        </div>
+    </section>
+    <!-- //começo -->
+
+    <script src="js-recuperar/jquery.min.js"></script>
+    <script>
+        $(document).ready(function (c) {
+            $('.alert-close').on('click', function (c) {
+                $('.main-mockup').fadeOut('slow', function (c) {
+                    $('.main-mockup').remove();
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>
