@@ -586,11 +586,14 @@
         <div class = "row wow animate__animated animate__fadeInUp animate__slow">
           <div class = "contact-left">
             <h2 id="">Mande sua mensagem aqui</h2>
-            <form>
-              <input type = "text" class = "form-control" placeholder="Nome">
-              <input type = "email" class = "form-control" placeholder="Email">
-              <textarea placeholder="Mensagem" rows = "6"></textarea>
+            <form action="https://formsubmit.co/donatiotcc@gmail.com" method="POST">
+              <input type = "text" class = "form-control" placeholder="Nome" name="name" id="name" required>
+              <input type = "email" class = "form-control" name="email" placeholder="Email" id="email" required>
+              <textarea placeholder="Mensagem" rows = "6" name="message" id="message" required></textarea>
               <button type = "submit" class = "submit-btn">Enviar Agora</button>
+              <input type="hidden" name="_subject" value="Confirmação de Cadastro!">
+              <input type="text" name="_honey" style="display:none">
+              <input type="hidden" name="_captcha" value="false">
             </form>
           </div>
 

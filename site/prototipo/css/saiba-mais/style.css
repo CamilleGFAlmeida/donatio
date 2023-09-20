@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 @font-face {
   font-family: "Super Funtime";
-  src: url("/site/prototipo/fonts/Super\ Funtime.ttf") format("truetype");
+  src: url("../../../prototipo/fonts/Super\ Funtime.ttf") format("truetype");
 }
 
 * {
@@ -833,6 +833,7 @@ footer .py-3{
 }
 .cards .card .content{
   width: 100%;
+  height: 100%; /* ADD */ 
   display: flex;
   flex-direction: column;
   justify-content: center;
