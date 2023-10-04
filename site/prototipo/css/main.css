@@ -13,6 +13,16 @@
   src: url("../fonts/Blessing.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Coffee Cake";
+  src: url("../fonts/CoffeCake.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Avocado Creamy";
+  src: url("../fonts/Avocado\ Creamy.ttf") format("truetype");
+}
+
 :root{
     --mount-meadow: #FFA7A6;
     --mount-rose: #e94a8c;
@@ -141,13 +151,13 @@ h1, h2, h3, h4, h5, h6{
 #title-text-white { /* ADD */ 
     color: var(--white);
     font-weight: 500;
-    font-family: "Blessing"; 
+    font-family: "Avocado Creamy"; /* Blessing */ 
 }
 
 #title-text { /* ADD */ 
     color: var(--mount-meadow);
     font-weight: 500;
-    font-family: "Blessing"; 
+    font-family: "Avocado Creamy"; /* Blessing */ 
 }
 
 #title-text-about-us { /* ADD */ 
@@ -315,6 +325,9 @@ section{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+#logo-title {
+    font-family: 'Super Funtime';
 }
 .navbar-brand{
     font-weight: 500;

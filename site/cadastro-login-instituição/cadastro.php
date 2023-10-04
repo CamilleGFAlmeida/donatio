@@ -13,26 +13,26 @@
       <div class="headline">
         <h1>Bem-vindo! Cadastre a sua instituição para começar.</h1>
       </div>
-      <form class="form" method="post" action="#">
+      <form class="form" method="get" action="../BD/cadastroj.php">
         <div class="signup">
           <div class="form-group">
             <label for="" class="label">CNPJ</label>
-            <input type="text" placeholder="Digite seu CNPJ" required onkeypress="$(this).mask('00.000.000/0000-00')" />
+            <input type="text" placeholder="Digite seu CNPJ" required="" id="cnpj"/>
           </div>
 
           <div class="form-group">
             <label for="" class="label">Nome</label>
-            <input type="text" placeholder="Digite seu Nome" required size="52" maxlength="70" />
+            <input type="text" placeholder="Digite seu Nome" required="" id="nome"/>
           </div>
 
           <div class="form-group">
             <label for="" class="label">CEP</label>
-            <input type="text" placeholder="Digite seu CEP" required onkeypress="$(this).mask('00000-000')" />
+            <input type="text" placeholder="Digite seu CEP" required="" id="cep"/>
           </div>
 
           <div class="form-group">
             <label for="" class="label">Número</label>
-            <input type="text" placeholder=" Digite seu Número" required maxlength="3"/>
+            <input type="text" placeholder=" Digite seu Número" required="" id="numero"/>
           </div>
 
           <div class="form-group">
@@ -41,29 +41,31 @@
               type="text"
               placeholder="Digite seu Complemento"
               required=""
+              id="complemento"
             />
           </div>
 
           <div class="form-group">
             <label for="" class="label">DDD</label>
-            <input type="text" placeholder="DDD. Ex(11)..." required maxlength="2" />
+            <input type="text" placeholder="DDD. Ex(11)..." required="" id="ddd"/>
           </div>
 
           <div class="form-group">
             <label for="" class="label">Telefone</label>
-            <input type="text" placeholder="Digite seu Telefone" required onkeypress="$(this).mask('(00) 00000-0000')"/>
+            <input type="text" placeholder="Digite seu Telefone" required="" id="tel"/>
           </div>
 
           <div class="form-group">
             <label for="" class="label">Email</label>
-            <input type="email" placeholder="Digite seu Email" required />
+            <input type="email" placeholder="Digite seu Email" required="" id="email"/>
           </div>
 
           <div class="form-group">
             <label for="" class="label">Senha</label>
-            <input type="password" placeholder="Digite sua Senha" required id="confirm_password" maxlength="8" min="1" pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[@#$])[a-zA-Z0-9@#$]{8,50}$"/>
+            <input type="password" placeholder="Digite sua Senha" required="" id="senha"/>
           </div>
-          <a href="cadastro-sucesso.html"><button type="button" class="btn">CADASTRAR</button></a>
+          <input type="submit" class="btn" value="Cadastrar"> <!-- modificado -->
+          <input type="submit" value="sim">
           
           <div class="account-exist">
             Já tem uma conta? <a href="../prototipo/index.html" id="login">Volte à pagina inicial</a>
@@ -92,27 +94,6 @@
       </form>
     </div>
 
-    <!--Mascara de formatação Jquery para os campos de cadastro -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-
     <script src="js/instituição.js"></script>
-
-    <script>
-      var password = document.getElementById("password")
-  , confirm_password = document.getElementById("confirm_password");
-
-function validatePassword(){
-  if(password.value != confirm_password.value) {
-    confirm_password.setCustomValidity("Senhas diferentes!");
-  } else {
-    confirm_password.setCustomValidity('');
-  }
-}
-
-password.onchange = validatePassword;
-confirm_password.onkeyup = validatePassword;
-    </script> 
   </body>
 </html>
