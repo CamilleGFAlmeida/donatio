@@ -163,6 +163,7 @@ h1, h2, h3, h4, h5, h6{
 #title-text-about-us { /* ADD */ 
     color: var(--mount-meadow);
     font-weight: 500;
+    font-family: 'Super Funtime';
 }
 
 .text{
