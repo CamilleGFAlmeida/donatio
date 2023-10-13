@@ -14,4 +14,3 @@
     signUp.classList.remove("inActive");
 }
 
-

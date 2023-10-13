@@ -13,7 +13,7 @@
       <div class="headline">
         <h1>Bem-vindo! Cadastre a sua instituição para começar.</h1>
       </div>
-      <form class="form" method="post" action="#">
+      <form class="form" id="form" method="post" action="#"> 
         <div class="signup">
           <div class="form-group">
             <label for="" class="label">CNPJ</label>
@@ -21,8 +21,8 @@
           </div>
 
           <div class="form-group">
-            <label for="" class="label">Nome</label>
-            <input type="text" placeholder="Digite seu Nome" required size="52" maxlength="70" />
+            <label for="username" class="label">Nome</label>
+            <input type="text" id="username" placeholder="Digite seu Nome" required size="52" maxlength="70" /> 
           </div>
 
           <div class="form-group">
@@ -55,15 +55,15 @@
           </div>
 
           <div class="form-group">
-            <label for="" class="label">Email</label>
-            <input type="email" placeholder="Digite seu Email" required />
+            <label for="email" class="label">Email</label>
+            <input type="email" id="email" placeholder="Digite seu Email" required /> 
           </div>
 
           <div class="form-group">
-            <label for="" class="label">Senha</label>
-            <input type="password" placeholder="Digite sua Senha" required id="confirm_password" maxlength="8" min="1" pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[@#$])[a-zA-Z0-9@#$]{8,50}$"/>
+            <label for="password" class="label">Senha</label>
+            <input type="password" placeholder="Digite sua Senha" required id="confirm_password" maxlength="8" min="1" pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[@#$])[a-zA-Z0-9@#$]{8,50}$"/> 
           </div>
-          <a href="cadastro-sucesso.html"><button type="button" class="btn">CADASTRAR</button></a>
+          <a href="#"><button type="submit" class="btn">CADASTRAR</button></a> <!-- type = button / anterior -->
           
           <div class="account-exist">
             Já tem uma conta? <a href="../prototipo/index.html" id="login">Volte à pagina inicial</a>
@@ -100,7 +100,7 @@
     <script src="js/instituição.js"></script>
 
     <script>
-      var password = document.getElementById("password")
+     /* var password = document.getElementById("password")
   , confirm_password = document.getElementById("confirm_password");
 
 function validatePassword(){
@@ -112,7 +112,7 @@ function validatePassword(){
 }
 
 password.onchange = validatePassword;
-confirm_password.onkeyup = validatePassword;
+confirm_password.onkeyup = validatePassword;*/ 
     </script> 
   </body>
 </html>
