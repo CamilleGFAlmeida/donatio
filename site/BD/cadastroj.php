@@ -12,7 +12,7 @@ $complemento        = filter_input(INPUT_GET,"complemento");
 $ddd                = filter_input(INPUT_GET,"ddd");
 $tel                = filter_input(INPUT_GET,"tel");
 $email              = filter_input(INPUT_GET,"email");
-$senha              = filter_input(INPUT_GET,"senha");
+$endereco           = filter_input(INPUT_GET,"endereco");
 
 $obj->setCnpj($cnpj);
 $obj->setNome($nome);
@@ -22,7 +22,7 @@ $obj->setComplemento($complemento);
 $obj->setDDD($ddd);
 $obj->setTel($tel);
 $obj->setEmail($email);
-$obj->setSenha($senha);
+$obj->setEndereco($endereco);
 
 echo $obj->inserir();
 
