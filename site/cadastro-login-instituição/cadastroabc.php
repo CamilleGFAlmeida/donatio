@@ -69,7 +69,7 @@
 
           <div class="form-group">
             <label for="" class="label">Telefone</label>
-            <input type="text" id="tel"  name="tel" placeholder="Digite seu Telefone" required onkeypress="$(this).mask('(00) 00000-0000')"/>
+            <input type="text" id="tel"  name="tel" placeholder="Digite seu Telefone" required onkeypress="$(this).mask('00000-0000')"/>
           </div>
 
           <div class="form-group">
