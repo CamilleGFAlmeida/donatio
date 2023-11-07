@@ -8,6 +8,7 @@
     />
       <script src="js/cep.js"></script>
     <link rel="stylesheet" href="css/cadastrostyle.css" />
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
   </head>
   <body>
     <div class="wrapper">

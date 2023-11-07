@@ -113,6 +113,11 @@ html{
     border-radius: 15px;
 }
 
+.logotipo {
+    width: 16%; /* 20% */ 
+    /*padding-left: 10px; */ 
+}
+
 /* setup & reusable stylings */
 img{
     width: 100%;
@@ -322,13 +327,14 @@ section{
 }
 .brand-and-toggler{
     font-size: 1.65rem;
-    padding: 0.8rem 0;
+    padding: 1rem 0; /*padrão = 0.8rem 0; */ /* modf = 0.6rem 0; */ 
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 #logo-title {
     font-family: 'Super Funtime';
+    padding-right: 142px; /* junção letras e logo*/ 
 }
 .navbar-brand{
     font-weight: 500;
